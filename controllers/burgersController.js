@@ -22,7 +22,7 @@ router.post("/burgers/create", function(req, res) {
 });
 
 router.put("/burgers/:id", function(req, res) {
-  burger.create(req.params.id, function(result) {
+  burger.update(req.params.id, function(result) {
     console.log(result);
     res.sendStatus(200);
   });
